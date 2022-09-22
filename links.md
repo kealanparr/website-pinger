@@ -16,6 +16,7 @@ https://30-projects.com
 https://30-projects-articles.com
 https://30-projects-articles.com/1
 https://30-projects-articles.com/2
+https://30-projects-articles.com/3
 https://30-projects-articles.com/4
 https://30-projects-articles.com/5
 https://einsteins-riddle.com/
