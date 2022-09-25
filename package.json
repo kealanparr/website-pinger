@@ -1,21 +1,17 @@
 {
-  "name": "every-link-i-wish-i-had-as-a-beginner",
+  "name": "website-pinger",
   "version": "1.0.0",
-  "description": "A step to try and reduce link rot in the ELIWIH repo",
+  "description": "Periodically ping websites to ensure no errors",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kealanparr/Every-link-I-wish-I-had-as-a-beginner.git"
+    "type": "git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kealanparr/Every-link-I-wish-I-had-as-a-beginner/issues"
-  },
-  "homepage": "https://github.com/kealanparr/Every-link-I-wish-I-had-as-a-beginner#readme",
+  "homepage": "https://github.com/kealanparr/website-pinger",
   "dependencies": {
     "axios": "^0.21.4",
     "dotenv": "^16.0.2",
