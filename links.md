@@ -18,6 +18,7 @@ https://30-projects-articles.com/5
 https://30-projects-articles.com/6
 https://30-projects-articles.com/7
 https://30-projects-articles.com/8
+https://30-projects-articles.com/9
 https://einsteins-riddle.com/
 https://kealanparr.com/assets/misc/JavaScript-Array-Cheatsheet.pdf
 https://kealanparr.ltd/
