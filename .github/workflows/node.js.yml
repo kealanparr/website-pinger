@@ -12,13 +12,14 @@ jobs:
         node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 18
-    - name: Use Node.js ${{ matrix.node-version }}
-    - run: npm install
-    - run: node ./index
-      env:
-        EMAIL: ${{ secrets.EMAIL }}
-        PASSWORD: ${{ secrets.PASSWORD }}
-        MY_EMAIL: ${{ secrets.MY_EMAIL }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Use Node.js ${{ matrix.node-version }}
+      - run: echo "It entered the job! The yaml isn't borked 🎉"
+      - run: npm install
+      - run: node ./index
+        env:
+          EMAIL: ${{ secrets.EMAIL }}
+          PASSWORD: ${{ secrets.PASSWORD }}
+          MY_EMAIL: ${{ secrets.MY_EMAIL }}
