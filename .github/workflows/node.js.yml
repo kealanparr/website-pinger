@@ -16,9 +16,6 @@ jobs:
       with:
         node-version: 18
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
     - run: npm install
     - run: node ./index
       env:
