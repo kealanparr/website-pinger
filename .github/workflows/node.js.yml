@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 18
       - run: echo "It entered the job! The yaml isn't borked 🎉"
-      - run: npm ci
+      - run: cd .. && npm ci
       - run: node ./index
         env:
           EMAIL: ${{ secrets.EMAIL }}
