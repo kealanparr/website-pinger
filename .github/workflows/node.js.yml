@@ -17,6 +17,7 @@ jobs:
         with:
           node-version: 18
       - run: echo "It entered the job! The yaml isn't borked 🎉"
+      - run: echo $(ls)
       - run: cd ../.. && npm install
       - run: node ./index
         env:
