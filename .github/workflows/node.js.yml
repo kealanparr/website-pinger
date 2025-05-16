@@ -13,9 +13,11 @@ jobs:
         node-version: [22.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 18
+          cache: 'npm'
       - run: echo "It entered the job! The yaml isn't borked 🎉"
       - run: echo $(ls)
       - run: npm install
