@@ -12,9 +12,8 @@ const checkResponseCode = async url => {
 		const res = await axios.get(encodeURI(url))
 		workingUrls.push(url + ' is returning ' + res.status)
 	} catch (err) {
-		console.log(err)
 		if (err?.response?.status >= 400) {
-			workingUrls.push(url + ' is returning ' + err?.response?.status)
+			brokenUrls.push(url + ' is returning ' + err?.response?.status)
 		}
 		else {
 			errorUrls.push(url + ' is erroring on the request!')
