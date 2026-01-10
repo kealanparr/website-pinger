@@ -3,7 +3,7 @@
 name: Node.js website pinger
 on:
   schedule:
-    - cron: '30 17 * * *'
+    - cron: '0 0 * * 0' # daily is too much, weekly is ok
 jobs:
   build:
     runs-on: ubuntu-latest
