@@ -31,18 +31,26 @@ const sendEmail = async () => {
 		}
 	})
 
+	// template literals use the toString() method which
+	// by default joins the returned array by map with a ,.
+	// To avoid this "problem" you can use join('')
 	const htmlBody = 
 	`<h1>Your friendly website pinger status update</h1>
 	
 	<h2>Working URL's that returned 200</h2>
-	${workingUrls.map(url => url + "<br>")}
+	${workingUrls.map(url => {
+		return url + "<br>"
+	}).join('')}
 
 	<h2>Broken URL's that are down</h2>
-	${brokenUrls.map(url => url + "<br>")}
+	${brokenUrls.map(url => {
+		return url + "<br>"
+	}).join('')}
 
 	<h2>URL's that are erroring on request</h2>
-	${errorUrls.map(url => url + "<br>")}
-	`
+	${errorUrls.map(url => {
+		return url + "<br>"
+	}).join('')}`
 
 	// send mail with defined transport object
 	let info = await transporter.sendMail({
