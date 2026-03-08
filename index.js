@@ -71,9 +71,9 @@ const forEachUrl = checkResponseCodeCallback => {
 		}
 	})
 	lr.on("end", _ => {
-		setTimeout(_ =>{
-			sendEmail()	
-		}, 5000)
+		//setTimeout(_ =>{
+		await sendEmail()
+		//}, 5000)
 	})
 }
 
