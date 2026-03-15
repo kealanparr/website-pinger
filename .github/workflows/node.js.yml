@@ -7,7 +7,7 @@ on:
     - cron: '0 0 * * 0' # daily is too much, weekly is ok
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         node-version: [24.x]
