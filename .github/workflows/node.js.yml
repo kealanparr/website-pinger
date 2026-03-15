@@ -2,7 +2,7 @@
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 name: Node.js website pinger
 on:
-  workflow_dispatch:
+  workflow_dispatch: # allows you to manually run the job if you want (when debugging stuff, its useful)
   schedule:
     - cron: '0 0 * * 0' # daily is too much, weekly is ok
 jobs:
