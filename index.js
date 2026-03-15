@@ -72,7 +72,7 @@ const forEachUrl = async checkResponseCodeCallback => {
 	})
 	lr.on("end", async () => {
 		//setTimeout(_ =>{
-		await sendEmail()
+		await sendEmail() // is it cached?
 		//}, 5000)
 	})
 }
