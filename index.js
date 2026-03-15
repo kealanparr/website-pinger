@@ -63,7 +63,7 @@ const sendEmail = async () => {
 	console.log("Message sent: %s", info.messageId)
 }
 
-const forEachUrl = checkResponseCodeCallback => {
+const forEachUrl = async checkResponseCodeCallback => {
 	const lr = new lineByLine("links.md")
 	lr.on("line", url => {
 		if (url) {
@@ -77,4 +77,4 @@ const forEachUrl = checkResponseCodeCallback => {
 	})
 }
 
-forEachUrl(checkResponseCode)
+await forEachUrl(checkResponseCode)
