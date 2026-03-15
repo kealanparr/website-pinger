@@ -7,7 +7,8 @@ on:
     - cron: '0 0 * * 0' # daily is too much, weekly is ok
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macos-latest # https://docs.github.com/en/actions/how-tos/write-workflows/choose-where-workflows-run/choose-the-runner-for-a-job
+                          # on ubuntu-latest, the scriptm just never ends. The script sends the email, but it never "completes" - mac fine
     strategy:
       matrix:
         node-version: [24.x]
