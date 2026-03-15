@@ -77,4 +77,4 @@ const forEachUrl = async checkResponseCodeCallback => {
 	})
 }
 
-await forEachUrl(checkResponseCode)
+forEachUrl(checkResponseCode)
