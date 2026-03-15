@@ -70,7 +70,7 @@ const forEachUrl = checkResponseCodeCallback => {
 			checkResponseCodeCallback(url)
 		}
 	})
-	lr.on("end", _ => {
+	lr.on("end", async () => {
 		//setTimeout(_ =>{
 		await sendEmail()
 		//}, 5000)
